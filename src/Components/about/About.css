@@ -1,0 +1,104 @@
+.about {
+  padding: var(--section-padding) 0;
+}
+
+.about .container {
+  display: flex;
+  gap: 50px;
+}
+
+.about .container > div {
+  flex: 1;
+}
+
+.about-desc {
+  margin-bottom: 20px;
+}
+
+.about-desc p {
+  color: var(--paragraph);
+  line-height: 1.7;
+  font-size: 20px;
+}
+
+.about-desc p strong {
+  color: var(--light);
+}
+
+.about-status {
+  padding: 20px 0;
+  margin-bottom: 20px;
+  border-top: 2px solid var(--border-color);
+  border-bottom: 2px solid var(--border-color);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.about .status-item {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.about .status-item span {
+  color: var(--primary);
+  font-size: 35px;
+  font-weight: 700;
+}
+
+.about .status-item p {
+  color: var(--paragraph);
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.about-actions {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.about-info {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.about-info .info-item {
+  padding: 15px;
+  background-color: var(--card-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 10px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  transition: var(--trans);
+}
+
+.about-info .info-item:hover {
+  transform: translateX(5px);
+  border-color: var(--primary);
+  box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+}
+
+.about-info .info-item i {
+  color: var(--primary);
+}
+
+.about-info .info-item h3 {
+  color: var(--paragraph);
+  margin-bottom: 5px;
+}
+
+.about-info .info-item p,
+.about-info .info-item a {
+  color: var(--light);
+}
+
+@media (max-width: 991px) {
+  .about .container {
+    flex-direction: column;
+  }
+}
