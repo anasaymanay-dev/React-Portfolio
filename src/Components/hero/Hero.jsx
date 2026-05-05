@@ -5,7 +5,7 @@ export default function Hero() {
   const [theme, setTheme] = useState("dark");
 
   useEffect(() => {
-    document.body.classList.toggle("light");
+    document.body.classList.toggle("light", theme === "light");
   }, [theme]);
 
   function handleTheme() {

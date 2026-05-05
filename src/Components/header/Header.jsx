@@ -24,7 +24,7 @@ export default function Header() {
   return (
     <header className={`header ${scroll ? "header-scroll" : ""}`}>
       <div className="container">
-        <div className="logo">A</div>
+        <div className="logo">Anas</div>
         <button className="toggle-icon" onClick={handleShowList}>
           <i className={`fa-solid ${showList ? "fa-xmark" : "fa-bars"}`}></i>
         </button>

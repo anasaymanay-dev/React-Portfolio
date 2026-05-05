@@ -75,6 +75,7 @@ html {
 body {
   background-color: var(--bg);
   font-family: sans-serif;
+  overflow-x: hidden;
 }
 
 a {
@@ -208,5 +209,12 @@ ul {
 
   .theme-toggle {
     top: 15%;
+  }
+}
+
+@media (max-width: 767px) {
+  .primary-btn,
+  .secondary-btn {
+    padding: 13px 16px;
   }
 }
