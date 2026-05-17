@@ -146,6 +146,10 @@
     padding: 90px 0 70px;
   }
 
+  .hero-image {
+    display: none;
+  }
+
   .hero-content {
     align-self: flex-start;
   }

@@ -1,23 +1,9 @@
 import "./Hero.css";
 import heroImage from "../../assets/hero-image.jpeg";
-import { useEffect, useState } from "react";
 export default function Hero() {
-  const [theme, setTheme] = useState("dark");
-
-  useEffect(() => {
-    document.body.classList.toggle("light", theme === "light");
-  }, [theme]);
-
-  function handleTheme() {
-    setTheme((prev) => (prev === "dark" ? "light" : "dark"));
-  }
-
   return (
     <>
       <section className="hero" id={"hero"}>
-        <div className="theme-toggle" onClick={handleTheme}>
-          <i className="fa-solid fa-circle-half-stroke"></i>
-        </div>
         <div className="container">
           <div className="hero-content">
             <div className="hero-available">Available for work</div>
