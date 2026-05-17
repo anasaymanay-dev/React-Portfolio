@@ -1,6 +1,13 @@
+import { useState } from "react";
 import "./model.css";
 
 export default function Model({ closeModel }) {
+  const [inputValues, setInputValues] = useState({
+    name: "",
+    email: "",
+    budget: "",
+    message: "",
+  });
   return (
     <div className="overlay" onClick={closeModel}>
       <div className="contact-form" onClick={(e) => e.stopPropagation()}>
@@ -14,6 +21,10 @@ export default function Model({ closeModel }) {
           <div className="form-group">
             <label htmlFor="name">Name</label>
             <input
+              value={inputValues.name}
+              onChange={(e) => {
+                setInputValues({ ...inputValues, name: e.target.value });
+              }}
               type="text"
               id="name"
               placeholder="Enter your name"
@@ -24,6 +35,10 @@ export default function Model({ closeModel }) {
           <div className="form-group">
             <label htmlFor="email">Email</label>
             <input
+              value={inputValues.email}
+              onChange={(e) => {
+                setInputValues({ ...inputValues, email: e.target.value });
+              }}
               type="email"
               id="email"
               placeholder="Enter your email"
@@ -32,7 +47,14 @@ export default function Model({ closeModel }) {
           </div>
           <div className="form-group">
             <label htmlFor="budjet">Budget</label>
-            <select id="budget" name="budget">
+            <select
+              id="budget"
+              name="budget"
+              value={inputValues.budget}
+              onChange={(e) => {
+                setInputValues({ ...inputValues, budget: e.target.value });
+              }}
+            >
               <option selected disabled>
                 Your Budget
               </option>
@@ -46,6 +68,10 @@ export default function Model({ closeModel }) {
           <div className="form-group">
             <label htmlFor="message">Message</label>
             <textarea
+              value={inputValues.message}
+              onChange={(e) => {
+                setInputValues({ ...inputValues, message: e.target.value });
+              }}
               name="message"
               id="message"
               rows="4"

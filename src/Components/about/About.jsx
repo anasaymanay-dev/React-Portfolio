@@ -1,54 +1,20 @@
 import "./About.css";
 import InfoItem from "./InfoItem";
+import { infoItemData } from "./infoItemData";
 export default function About() {
-  let infoItem = [
-    {
-      id: 1,
-      iconClass: "fa-solid fa-location-dot",
-      title: "Location",
-      type: "text",
-      text: "Ashmoun Monufia Egyp",
-    },
-    {
-      id: 2,
-      iconClass: "fa-solid fa-envelope",
-      title: "Email",
-      type: "link",
-      href: "mailto:anasaymanAY@gmail.com",
-      text: "anasaymanAY@gmail.com",
-    },
-    {
-      id: 3,
-      iconClass: "fa-solid fa-phone",
-      title: "Phone",
-      type: "link",
-      href: "https://wa.me/201030435331",
-      text: "+201030435331",
-    },
-    {
-      id: 4,
-      iconClass: "fa-solid fa-code",
-      title: "Speciality",
-      type: "text",
-      text: "React · Tailwind-CSS",
-    },
-    {
-      id: 5,
-      iconClass: "fa-solid fa-language",
-      title: "Languages",
-      type: "text",
-      text: "Arabic (Native) · English (Good)",
-    },
-  ];
-
   return (
     <>
       <section className="about" id="about">
         <div className="section-heading">
-          <p>WHO I'AM</p>
+          <p className="section-subtitle">WHO I AM</p>
           <h2>
             About <span>Me</span>
           </h2>
+          <div className="heading-line"></div>
+          <p className="section-description">
+            Passionate Front-End Developer creating modern and responsive web
+            experiences.
+          </p>
         </div>
         <div className="container">
           <div className="about-content">
@@ -90,7 +56,7 @@ export default function About() {
             </div>
           </div>
           <div className="about-info">
-            {infoItem.map((item) => {
+            {infoItemData.map((item) => {
               return (
                 <InfoItem
                   key={item.id}
