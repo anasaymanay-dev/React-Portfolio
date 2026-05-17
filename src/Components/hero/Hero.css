@@ -157,6 +157,10 @@
   .hero-title h1 {
     font-size: 50px;
   }
+
+  .hero .social-icons {
+    margin-bottom: 20px;
+  }
 }
 
 @media (max-width: 767px) {

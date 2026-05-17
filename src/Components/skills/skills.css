@@ -140,10 +140,6 @@
 }
 
 @media (max-width: 767px) {
-  .skills {
-    padding: 70px 0;
-  }
-
   .skills .container {
     grid-template-columns: 1fr;
   }
