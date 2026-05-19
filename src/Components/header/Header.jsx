@@ -56,6 +56,11 @@ export default function Header() {
                 </a>
               </li>
               <li className="nav-item">
+                <a href="#projects" onClick={handleLinkClick}>
+                  Projects
+                </a>
+              </li>
+              <li className="nav-item">
                 <a href="#resume" onClick={handleLinkClick}>
                   Resume
                 </a>
@@ -63,11 +68,6 @@ export default function Header() {
               <li className="nav-item">
                 <a href="#services" onClick={handleLinkClick}>
                   Services
-                </a>
-              </li>
-              <li className="nav-item">
-                <a href="#projects" onClick={handleLinkClick}>
-                  Projects
                 </a>
               </li>
               <li className="nav-item">
