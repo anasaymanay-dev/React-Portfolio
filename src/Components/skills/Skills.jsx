@@ -41,9 +41,6 @@ export default function Skills() {
           My <span>Skills</span>
         </h2>
         <div className="heading-line"></div>
-        <p className="section-description">
-          Technologies and tools I use to build modern web applications.
-        </p>
       </div>
       <div className="container">{skillsList}</div>
     </section>

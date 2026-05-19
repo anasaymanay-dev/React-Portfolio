@@ -111,12 +111,29 @@ ul {
 }
 
 .section-subtitle {
+  display: inline-block;
   font-family: "Courier New", Courier, monospace;
   color: var(--primary);
-  font-size: 18px;
-  letter-spacing: 3px;
+  font-size: 13px;
+  letter-spacing: 2px;
+  padding: 6px 14px;
+  border-radius: 999px;
+  background: rgba(124, 106, 255, 0.12);
+  border: 1px solid rgba(124, 106, 255, 0.25);
   margin-bottom: 15px;
   text-transform: uppercase;
+  transition: var(--trans);
+  position: relative;
+  overflow: hidden;
+}
+
+.section-subtitle::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(    90deg,    transparent,    rgba(124, 106, 255, 0.25),    transparent  );
+  transform: translateX(-100%);
+  animation: shimmer 2s infinite alternate;
 }
 
 .section-heading h2 {
@@ -134,36 +151,39 @@ ul {
 .heading-line {
   width: 90px;
   height: 4px;
-  background: var(--primary);
-  margin: 0 auto 25px;
+  background: linear-gradient(90deg, var(--primary), var(--secondary));
+  margin: 0 auto;
   border-radius: 20px;
   position: relative;
+  overflow: hidden;
 }
 
 .heading-line::after {
   content: "";
   position: absolute;
-  width: 12px;
-  height: 12px;
-  background: var(--primary);
+  width: 10px;
+  height: 10px;
+  background: var(--light);
   border-radius: 50%;
   top: 50%;
-  right: -8px;
+  right: -6px;
   transform: translateY(-50%);
-}
-
-.section-description {
-  color: #bdbdbd;
-  font-size: 18px;
-  line-height: 1.8;
-  max-width: 650px;
-  margin: auto;
+  animation: moveDot 2s infinite ease-in-out;
 }
 
 .container {
   width: 90%;
   padding: 0 15px;
   margin: 0 auto;
+}
+
+@keyframes shimmer {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
 }
 
 @keyframes to-down {
@@ -175,16 +195,24 @@ ul {
   }
 }
 
-@media (max-width: 991px) {
-  /* .scroll-down {
-    bottom: 60px;
-  } */
-
+@keyframes moveDot {
+  0% {
+    right: -6px;
+  }
+  50% {
+    right: 80px;
+  }
+  100% {
+    right: -6px;
+  }
 }
 
 @media (max-width: 767px) {
   .primary-btn,
   .secondary-btn {
     padding: 13px 16px;
+  }
+  .section-heading h2 {
+    font-size: 35px;
   }
 }

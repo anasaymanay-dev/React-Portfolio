@@ -11,10 +11,6 @@ export default function About() {
             About <span>Me</span>
           </h2>
           <div className="heading-line"></div>
-          <p className="section-description">
-            Passionate Front-End Developer creating modern and responsive web
-            experiences.
-          </p>
         </div>
         <div className="container">
           <div className="about-content">

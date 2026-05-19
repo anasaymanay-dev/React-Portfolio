@@ -45,10 +45,6 @@ export default function Projects() {
           My <span>Projects</span>
         </h2>
         <div className="heading-line"></div>
-        <p className="section-description">
-          Projects that reflect creativity, performance, and attention to detail
-          in every experience.
-        </p>
       </div>
       <div className="container">
         <div className="shuffle">
