@@ -2,6 +2,7 @@
   position: relative;
   color: #fff;
   background-image: var(--hero-gradient);
+  overflow-x: hidden;
 }
 
 .hero::before {
@@ -143,32 +144,19 @@
 @media (max-width: 991px) {
   .hero .container {
     flex-direction: column;
-    padding: 90px 0 70px;
+    padding: 120px 0 90px;
+    gap: 40px;
   }
-
-  .hero-image {
-    display: none;
-  }
-
   .hero-content {
     align-self: flex-start;
+    margin-top: 10px;
   }
 
   .hero-title h1 {
     font-size: 50px;
   }
-
-  .hero .social-icons {
-    margin-bottom: 20px;
-  }
-}
-
-@media (max-width: 767px) {
-  .hero::before {
-    width: 200px;
-    height: 200px;
-    left: 50%;
-    transform: translateX(-50%);
+  .hero-image {
+    margin-bottom: 10px;
   }
 }
 
