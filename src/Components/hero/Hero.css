@@ -2,7 +2,6 @@
   position: relative;
   color: #fff;
   background-image: var(--hero-gradient);
-  overflow-x: hidden;
 }
 
 .hero::before {
@@ -150,6 +149,11 @@
   .hero-content {
     align-self: flex-start;
     margin-top: 10px;
+  }
+
+  .hero::before {
+    width: 200px;
+    height: 200px;
   }
 
   .hero-title h1 {
