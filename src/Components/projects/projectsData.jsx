@@ -1,10 +1,10 @@
-import recipeImg from "../assets/recipe-search-project.jpeg";
-import dashboardImg from "../assets/Dashboard.jpeg";
-import portfolioImg from "../assets/portfolio.jpeg";
-import todoImg from "../assets/to-do-list.jpeg";
-import fruitImg from "../assets/fruit-shop.jpeg";
-import upflowImg from "../assets/up-flow.jpeg";
-import crudsImg from "../assets/cruds.jpeg";
+import recipeImg from "../../assets/recipe-search-project.jpeg";
+import dashboardImg from "../../assets/Dashboard.jpeg";
+import portfolioImg from "../../assets/portfolio.jpeg";
+import todoImg from "../../assets/to-do-list.jpeg";
+import fruitImg from "../../assets/fruit-shop.jpeg";
+import upflowImg from "../../assets/up-flow.jpeg";
+import crudsImg from "../../assets/cruds.jpeg";
 
 export const projectsData = [
   {
