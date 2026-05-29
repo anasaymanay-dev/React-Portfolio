@@ -103,6 +103,31 @@ ul {
   animation: to-down 0.5s ease infinite alternate;
 }
 
+.scroll-top {
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--light);
+  background: linear-gradient(135deg, var(--primary), var(--secondary));
+  box-shadow: 0 10px 30px var(--primary-blur);
+  z-index: 999;
+  transition: var(--trans);
+}
+
+.scroll-top:hover {
+  transform: translateY(-6px);
+}
+
+.scroll-top i {
+  font-size: 20px;
+}
+
 .section-heading {
   margin-bottom: 70px;
   text-align: center;
@@ -131,7 +156,12 @@ ul {
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(    90deg,    transparent,    rgba(124, 106, 255, 0.25),    transparent  );
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(124, 106, 255, 0.25),
+    transparent
+  );
   transform: translateX(-100%);
   animation: shimmer 2s infinite alternate;
 }
@@ -214,5 +244,15 @@ ul {
   }
   .section-heading h2 {
     font-size: 35px;
+  }
+}
+
+@media (max-width: 767px) {
+  .scroll-top {
+    width: 52px;
+    height: 52px;
+
+    right: 20px;
+    bottom: 20px;
   }
 }

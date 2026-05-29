@@ -1,7 +1,9 @@
 import About from "./Components/about/About";
+import Footer from "./Components/footer/Footer";
 import Header from "./Components/header/Header";
 import Hero from "./Components/hero/Hero";
 import Projects from "./Components/projects/Projects";
+import Services from "./Components/services/Services";
 import Skills from "./Components/skills/Skills";
 
 function App() {
@@ -13,6 +15,11 @@ function App() {
         <About />
         <Skills />
         <Projects />
+        <Services />
+        <Footer />
+        <a href="#hero" className="scroll-top">
+          <i className="fa-solid fa-arrow-up"></i>
+        </a>
       </main>
     </>
   );

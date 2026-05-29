@@ -61,11 +61,6 @@ export default function Header() {
                 </a>
               </li>
               <li className="nav-item">
-                <a href="#resume" onClick={handleLinkClick}>
-                  Resume
-                </a>
-              </li>
-              <li className="nav-item">
                 <a href="#services" onClick={handleLinkClick}>
                   Services
                 </a>
