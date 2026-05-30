@@ -43,7 +43,11 @@ export default function About() {
               </div>
             </div>
             <div className="about-actions">
-              <a href="#" className="btn primary-btn">
+              <a
+                target="_blank"
+                href="https://drive.google.com/file/d/1yMOzvdXo0tMbYuZG0GYbcoxljpYHmBts/view"
+                className="btn primary-btn"
+              >
                 Download CV
               </a>
               <a href="#contact" className="btn secondary-btn">

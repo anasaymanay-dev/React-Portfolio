@@ -66,6 +66,11 @@ export default function Header() {
                 </a>
               </li>
               <li className="nav-item">
+                <a href="#contact" onClick={handleLinkClick}>
+                  Contact
+                </a>
+              </li>
+              <li className="nav-item">
                 <a
                   href="#"
                   className="nav-btn btn"
